@@ -1,0 +1,104 @@
+idmind_tabletop_msgs:
+    ubuntu: [ros-kinetic-idmind-tabletop-msgs]
+
+idmind_tabletop_driver:
+    ubuntu: [ros-kinetic-idmind-tabletop-driver]
+
+cerevoice_ros:
+    ubuntu: [ros-kinetic-cerevoice-ros]
+
+idmind_tabletop:
+    ubuntu: [ros-kinetic-idmind-tabletop]
+
+idmind_tabletop_visualization:
+    ubuntu: [ros-kinetic-idmind-tabletop-visualization]
+
+idmind_tabletop_usb_cam:
+    ubuntu: [ros-kinetic-idmind-tabletop-usb-cam]
+
+strawberry_ros_msgs:
+    ubuntu: [ros-kinetic-strawberry-ros-msgs]
+
+strawberry_ros_tf:
+    ubuntu: [ros-kinetic-strawberry-ros-tf]
+
+strawberry_ros_launch:
+    ubuntu: [ros-kinetic-strawberry-ros-launch]
+
+strawberry_ros_visualization:
+    ubuntu: [ros-kinetic-strawberry-ros-visualization]
+
+strawberry_ros_asr:
+    ubuntu: [ros-kinetic-strawberry-ros-asr]
+
+strawberry_ros_zz:
+    ubuntu: [ros-kinetic-strawberry-ros-zz]
+
+strawberry_ros_people:
+    ubuntu: [ros-kinetic-strawberry-ros-people]
+
+strawberry_ros_faces:
+    ubuntu: [ros-kinetic-strawberry-ros-faces]
+
+fkie_message_filters:
+    ubuntu: [ros-kinetic-fkie-message-filters]
+
+flowdesigner:
+    ubuntu: [flowdesigner]
+
+librasp-netapi:
+    ubuntu: [librasp-netapi]
+
+libzzfd:
+    ubuntu: [libzzfd]
+
+libzzio:
+    ubuntu: [libzzio]
+
+libzzvocon:
+    ubuntu: [libzzvocon]
+
+rasp-sample:
+    ubuntu: [rasp-sample]
+
+zz_msgs:
+    ubuntu: [ros-kinetic-zz-msgs]
+
+zz_params:
+    ubuntu: [ros-kinetic-zz-params]
+
+zzcuda:
+    ubuntu: [zzcuda]
+
+zzd:
+    ubuntu: [zzd]
+
+zzfd:
+    ubuntu: [zzfd]
+
+zzgpl:
+    ubuntu: [zzgpl]
+
+zzos:
+    ubuntu: [zzos]
+
+zzros:
+    ubuntu: [zzros]
+
+zztools:
+    ubuntu: [zztools]
+
+zzvocon:
+    ubuntu: [zzvocon]
+
+zz-weka-svm:
+    ubuntu: [zz-weka-svm]
+
+behavior_tree_ros:
+    ubuntu: [ros-kinetic-behavior-tree-ros]
+
+behavior_tree_core:
+    ubuntu: [ros-kinetic-behavior-tree-core]
+
+haru_hanoi_tower_utils:
+    ubuntu: [ros-kinetic-haru-hanoi-tower-utils]
