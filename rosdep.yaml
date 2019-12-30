@@ -102,3 +102,6 @@ behavior_tree_core:
 
 haru_hanoi_tower_utils:
     ubuntu: [ros-kinetic-haru-hanoi-tower-utils]
+    
+patchelf:
+    ubuntu: [patchelf]
