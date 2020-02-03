@@ -16,6 +16,15 @@ idmind_tabletop_visualization:
 idmind_tabletop_usb_cam:
     ubuntu: [ros-kinetic-idmind-tabletop-usb-cam]
 
+idmind_tabletop_lip_sync:
+    ubuntu: [ros-kinetic-idmind-tabletop-lip-sync]
+
+idmind_tabletop_orbbec:
+    ubuntu: [ros-kinetic-idmind-tabletop-orbbec]
+
+idmind_tabletop_telegram_bot:
+    ubuntu: [ros-kinetic-idmind-tabletop-telegram-bot]
+
 strawberry_ros_msgs:
     ubuntu: [ros-kinetic-strawberry-ros-msgs]
 
@@ -39,6 +48,12 @@ strawberry_ros_people:
 
 strawberry_ros_faces:
     ubuntu: [ros-kinetic-strawberry-ros-faces]
+
+strawberry_ros_haru:
+    ubuntu: [ros-kinetic-strawberry-ros-haru]
+
+strawberry_ros_dialog:
+    ubuntu: [ros-kinetic-strawberry-ros-dialog]
 
 fkie_message_filters:
     ubuntu: [ros-kinetic-fkie-message-filters]
