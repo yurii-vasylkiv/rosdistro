@@ -93,6 +93,14 @@ strawberry_ros_dialog:
       bionic: [ros-melodic-strawberry-ros-dialog]
       xenial: [ros-kinetic-strawberry-ros-dialog]
 
+strawberry_ros_azure_kinect:
+    ubuntu:
+      bionic: [ros-melodic-strawberry-ros-azure-kinect]
+
+azure_kinect_ros_driver:
+    ubuntu:
+      bionic: [ros-melodic-azure-kinect-ros-driver]
+
 fkie_message_filters:
     ubuntu: 
       bionic: [ros-melodic-fkie-message-filters]
