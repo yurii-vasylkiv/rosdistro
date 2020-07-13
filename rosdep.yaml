@@ -178,3 +178,12 @@ zz-weka-svm:
  
 patchelf:
     ubuntu: [patchelf]
+
+libsoundio1:
+    ubuntu: [libsoundio1]
+
+libk4a1.3-dev:
+    ubuntu: [libk4a1.3-dev]
+
+libk4abt1.0-dev:
+    ubuntu: [libk4abt1.0-dev]
