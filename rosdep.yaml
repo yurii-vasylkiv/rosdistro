@@ -43,6 +43,11 @@ idmind_tabletop_telegram_bot:
       bionic: [ros-melodic-idmind-tabletop-telegram-bot]
       xenial: [ros-kinetic-idmind-tabletop-telegram-bot]
 
+idmind_tabletop_image_analyser:
+    ubuntu:
+      bionic: [ros-melodic-idmind-tabletop-image-analyser]
+      xenial: [ros-kinetic-idmind-tabletop-image-analyser]
+
 strawberry_ros_msgs:
     ubuntu: 
       bionic: [ros-melodic-strawberry-ros-msgs]
