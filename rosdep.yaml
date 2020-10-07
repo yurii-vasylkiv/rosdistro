@@ -192,3 +192,13 @@ libk4a1.3-dev:
 
 libk4abt1.0-dev:
     ubuntu: [libk4abt1.0-dev]
+
+nix_common:
+    ubuntu: 
+      bionic: [ros-melodic-nix-common]
+interactive_waypoint_markers:
+    ubuntu:
+      bionic: [ros-melodic-interactive-waypoint-markers]
+upo_markers:
+    ubuntu:
+      bionic: [ros-melodic-upo-markers]
