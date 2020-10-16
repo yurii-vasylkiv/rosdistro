@@ -1,5 +1,51 @@
 #!/usr/bin/env bash
  
+function add_rosdep_yaml_to_path()
+{
+    local absolute_path_to_yaml=$1
+    local force=$2
+
+    if [ -f "$absolute_path_to_yaml" ]; then 
+        if [ -f "/etc/ros/rosdep/sources.list.d/50-my_list.list" ] && [ "$force" != '--force' ]; then 
+            echo "File /etc/ros/rosdep/sources.list.d/50-my_list.list already exists. Please remove it first and rerun this script. Abort..."
+            return 0
+        else 
+            echo "yaml file://$absolute_path_to_yaml" | sudo tee /etc/ros/rosdep/sources.list.d/50-my_list.list > /dev/null
+            echo "Done."
+            echo "running rosdep update..." 
+            rosdep update > /dev/null 
+            echo "Done." 
+            return 0
+        fi
+    else 
+       set -- $(locale LC_MESSAGES)
+       yesptrn="$1"; noptrn="$2"; yesword="$3"; noword="$4"
+       echo "No arguments were provided. Defaulting to the $(realpath $(find . -name rosdep.yaml))"
+       read -p "Would you like to add this file to the rosdep path (${yesptrn##^}/${noptrn##^})?" yn
+       
+       case $yn in
+        ${yesptrn##^} ) 
+            echo "yaml file://$(realpath $(find . -name rosdep.yaml))" | sudo tee /etc/ros/rosdep/sources.list.d/50-my_list.list > /dev/null
+            echo "Done." 
+            echo "running rosdep update..."
+            rosdep update > /dev/null 
+            echo "Done."
+            return 0;;
+            
+        ${noptrn##^} ) 
+            echo "Please provide an absolute path to your custom rosdep.yaml. Abort..."
+            return 0;;
+
+        * ) echo "Answer ${yesptrn}/${noptrn}."
+            echo "Please provide an absolute path to your custom rosdep.yaml. Abort..."
+            return 0;;
+       esac
+       
+       return 0
+    fi
+} 
+ 
+ 
 function find_in_list()
 {
    [[ "$2" == *"$1"* ]] && return 0 || return 1;
@@ -127,7 +173,7 @@ fi
  
 # Delete any previous compilation
 BUILD_PREFIX=/tmp/bloom_debian
-rm --force -R $BUILD_PREFIX
+#rm --force -R $BUILD_PREFIX
 mkdir -p $BUILD_PREFIX
  
 cd "${WORKSPACE_FOLDER}"
@@ -167,7 +213,7 @@ fi
 # and remove the debian/ folder left after
 mkdir -p $OUTPUT_FOLDER
  
-for directory in $(get_package_paths $WORKSPACE_FOLDER); do
-   mv --force  "$directory"/../*.deb $OUTPUT_FOLDER
-   rm --force -R "$directory/debian/"
-done
+#for directory in $(get_package_paths $WORKSPACE_FOLDER); do
+   # mv --force  "$directory"/../*.deb $OUTPUT_FOLDER
+   # rm --force -R "$directory/debian/"
+#done
